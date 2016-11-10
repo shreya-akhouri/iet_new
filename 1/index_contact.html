@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default_contact.css" />
+		<link rel="stylesheet" type="text/css" href="css/component_contact.css" />
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="js/modernizr1.custom.js"></script>
+
+	</head>
+	<body class="nl-blurred">
+		<div class="container demo-1">
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form" action="index.php" method="POST">
+					I am <input type="text" name="name" value="" placeholder="Name" data-subline="Your Full Name"/>
+					,<input type="text" name="regno" value="" placeholder="Registration Number" data-subline="Your Registration Number"/>
+					currently <select name="type">
+						<option value="1" selected>a STUDENT</option>
+						<option value="2">an EMPLOYEE</option>
+						<option value="3">OTHERS</option>
+					</select> in <input type="text" value="" placeholder="School/College" data-subline="Name of the current institution"/>
+					and I <select name="agree">
+						<option value="1" selected> WOULD</option>
+						<option value="2"> WOULD NOT</option>
+					</select> like to recieve updates on <input type="text" name="email" value="" placeholder="username@XXX.com" data-subline="Please enter a <em>valid</em> email id"/>
+						<br>
+						<br>
+						<button class="new" type="submit"><i class="fa fa-check" ariya-hiden="true"></i> SUBMIT</button>
+					
+					<div class="nl-overlay"></div>
+				</form>
+			</div>
+		</div><!-- /container -->
+		<script src="js/nlform.js"></script>
+		<script src="js/svgcheckbx.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+	</body>
+</html>
